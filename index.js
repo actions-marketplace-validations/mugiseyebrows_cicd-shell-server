@@ -14,20 +14,13 @@ if (workspace !== undefined) {
     set_cwd(workspace)
 }
 
-const argv = require('yargs')
-    .command('$0 <host> <port> <secret> [options]')
-    .option('c', {
-        alias: 'chardet',
-        description: 'use chardet to detect output encoding'
-    })
-    .option('r', {
-        alias: 'ruchardet',
-        description: 'use ruchardet to detect output encoding'
-    })
-    .option("port", {type: 'number', description: 'mediator port'})
-    .option("host", {type: 'string', description: 'mediator host'})
-    .option("enc", {type: 'string', description: 'output encoding'})
-    .argv;
+const core = require('@actions/core');
+
+const argv = {
+    host: core.getInput('host'),
+    port: core.getInput('port'),
+    secret: core.getInput('secret'),
+}
 
 let cli_enc = 'utf8'
 function detect_cli_enc() {
