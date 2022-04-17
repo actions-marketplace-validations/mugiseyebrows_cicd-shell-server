@@ -6,6 +6,7 @@ inputs:
     description: Mediator host
   port:
     description: Mediator port
+    default: 8857
   secret:
     description: Server secret
 runs:
