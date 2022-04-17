@@ -1,0 +1,13 @@
+name: cicd-shell
+description: "Shell for fiddling with ci/cd: executing commands, pushing and pulling files."
+author: mugiseyebrows
+inputs:
+  host:
+    description: Mediator host
+  port:
+    description: Mediator port
+  secret:
+    description: Server secret
+runs:
+  using: node16
+  main: index.js
