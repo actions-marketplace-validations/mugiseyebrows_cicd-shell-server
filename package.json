@@ -17,10 +17,11 @@
   },
   "homepage": "https://github.com/mugiseyebrows/shell-test#readme",
   "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1",
     "chardet": "^1.4.0",
     "debug": "^4.3.4",
     "iconv-lite": "^0.6.3",
-    "ruchardet": "^0.0.2",
-    "yargs": "^17.4.1"
+    "ruchardet": "^0.0.2"
   }
 }
