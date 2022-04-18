@@ -1,1 +1,1 @@
-cp -r ../cicd-shell/server/* .
+cp -r ../cicd-shell/server/index.js .
